@@ -13,25 +13,35 @@ $dark: rgba(0,0,0,1);
          url('../fonts/chinese_rocks_rg-webfont.svg#chinese_rocksregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-body, html{
+
+body{
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
   margin: 0px;
+  background-image: url('../img/bg.png');
 }
+
 * {-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .page{
   width: 80%;
-  margin: 0 auto;
+  padding: 5px 0 20px 0;
+  margin: 30px auto 70px auto;
+  background: $light;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+   &:after{
+    clear: both;
+    display: table;
+    content:"";
+    }
 }
 
 h1{
   font-family: "scurryfont", sans-serif;
-  margin: 0 auto;
-  width: intrinsic;
+
   font-size: 50px;
 }
 
@@ -115,17 +125,35 @@ header {
 }
 
 
+.videoPlayer{
+  padding: 20px;
+  background: $dark;
+  width: 100%;
+   &:after{
+    clear: both;
+    display: table;
+    content:"";
+    }
 
+}
 
-
+.news{
+  margin: 25px;
+  h1{
+    text-align: center;
+    
+  }
+}
 
 .credits{
-  max-width: 960px;
-  margin: 20px auto;
+  width: 80%;
+  margin: 20px auto 60px auto;
+  text-align: center;
   .credit{
-     width: 50%;
+    position: relative;
+     width: 420px;
     display: inline-block;
-    float: left;
+  
     .credit-inner{
    background: $dark;
 color: $light;
@@ -137,11 +165,13 @@ padding: 10px;
     display: table;
     content:"";
     }
-    img{
+    .img{
       margin-left: 8%;
        width: 20%;
     display: inline-block;
     float: left;
+  
+    font-family: "scurryfont";
     }
 
     .content{
@@ -164,4 +194,31 @@ margin-left: 10%;
   }
   }
   }
+  &:after{
+    clear: both;
+    display: table;
+    content:"";
+    }
+}
+
+
+
+footer{
+  padding: 50px;
+ 
+  background: $dark;
+   &:after{
+    clear: both;
+    display: table;
+    content:"";
+    }
+  .footer-inner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+  color: white;
+
+}
+
 }
