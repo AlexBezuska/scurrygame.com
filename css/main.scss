@@ -102,7 +102,7 @@ header {
 .secretLink{
   padding: 10px;
   color: $light;
-  position: absolute;
+  position: relative;
   top: 0px;
   text-decoration: none;
   i{font-size: 40px;
@@ -112,10 +112,10 @@ header {
   display: block;
 
   &.left{
-    left: 0px;
+    float: left;
   }
   &.right{
-    right: 0px;
+    float: right;
   }
   &:hover{
   
