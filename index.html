@@ -10,33 +10,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
       
     </head>
     <body>
-<a class="secretLink left" target="_blank"href="https://github.com/ericlathrop/scurry"></a>
-       <a class="secretLink right" target="_blank"href="http://ericlathrop.com/scurry"></a>
-
+        <div class="topBar">
+            <a class="secretLink left" target="_blank"href="https://github.com/ericlathrop/scurry/"><i class="fa fa-github"></i> Github Repo</a>
+            <a class="secretLink right" target="_blank"href="http://ericlathrop.com/scurry_camera"><i class="fa fa-cogs"></i> Current Build</a>
+        </div> <!-- .topBar -->
 
        <div class="page">
-        <header><span class="commitMessage"></span>
+
+        <header>
+
+           <span class="commitMessage"></span>
            <img src="img/scurry-web-banner.png" alt=" Scurry - browser game for mobile or desktop"/>
         </header>
-        
-        <iframe id="trailer" src="//www.youtube.com/embed/wR0SGh-HSMc?rel=0" frameborder="0" allowfullscreen></iframe>
 
+        <div class="content">
+
+            <iframe id="trailer" src="//www.youtube.com/embed/wR0SGh-HSMc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+            <div class="credits">
+                <div class="credit"> <div class="credit-inner">
+                <img src="https://2.gravatar.com/avatar/e9495adcf20e29d401f7f2749aede801" alt="Eric Lathrop - Code for Scurry Game">
+                <div class="content">
+                <h1>Eric Lathrop</h1>
+                <h2>Code</h2></div>
+                </div></div><!-- .credit  -->
+                <div class="credit"><div class="credit-inner">
+                <img src="https://2.gravatar.com/avatar/200c81d28bd47bb9768df53a49d83f8b" alt="Eric Lathrop - Code for Scurry Game">
+                <div class="content">
+                <h1>Alex Bezuska</h1>
+                <h2>Art</h2></div>
+                </div></div><!-- .credit  -->
+            </div><!-- .credits  -->
+        </div><!-- .content  -->
 
        </div><!-- .page  -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-     
+        <script src="js/jquery-2.0.3.min.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-43445919-3', 'sucrrygame.com');
+            ga('send', 'pageview');
         </script>
     </body>
 </html>

@@ -2,11 +2,12 @@
 
 
 $(document).ready(function(){
-  var githubURL = "https://api.github.com/repos/ericlathrop/scurry/commits";
+  var gameRepo = "https://api.github.com/repos/ericlathrop/scurry/commits";
+  var siteRepo = "https://api.github.com/repos/AlexBezuska/scurrygame.com/commits";
 var message = "";
 
-    $.ajax({
-        url: githubURL,
+   $.ajax({
+        url: gameRepo,
         dataType: 'jsonp',
         success: function(json) {
           
